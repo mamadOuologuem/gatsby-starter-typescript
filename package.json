@@ -1,0 +1,125 @@
+{
+  "name": "tempate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "template, template, template, template",
+  "keywords": [
+    "template"
+  ],
+  "license": "MIT",
+  "author": "mamadou.ouologuem02@gmail.com",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "rimraf public",
+    "dev": "gatsby develop",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src --ignore-path .gitignore",
+    "predeploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "start": "yarn run dev",
+    "test": "jest --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "pretty-quick --staged",
+      "yarn type-check",
+      "yarn lint --fix"
+    ],
+    "{*.{json,md}}": [
+      "pretty-quick --staged"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@reduxjs/toolkit": "^1.2.5",
+    "@testing-library/dom": "^6.15.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "@testing-library/user-event": "^7.1.2",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^25.4.0",
+    "classnames": "^2.2.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.1",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "gatsby": "^2.10.0",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-plugin-typescript": "^2.3.5",
+    "gatsby-transformer-sharp": "^2.2.0",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-helmet": "^5.2.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.8",
+    "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.0.0",
+    "@types/reach__router": "^1.3.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^5.0.8",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "babel-preset-gatsby": "^0.3.6",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-flowtype": "^3.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^1.7",
+    "gatsby-plugin-env-variables": "^1.0.1",
+    "gatsby-plugin-material-ui": "^2.1.8",
+    "gh-pages": "^2.0.1",
+    "husky": "^4.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.4.0",
+    "lint-staged": "^10.2.6",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "react-test-renderer": "^16.13.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^25.4.0",
+    "typescript": "~3.8.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

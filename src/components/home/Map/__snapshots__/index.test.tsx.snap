@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<div>
+  <div
+    class="Map-root-1"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthLg"
+    >
+      <mock-typography
+        variant="h1"
+      >
+        Gatsby typescript starter
+      </mock-typography>
+    </div>
+  </div>
+</div>
+`;
